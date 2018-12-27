@@ -1,0 +1,65 @@
+mixin pricingTableCard
+  .pricing-table
+    .pricing-table-inner
+      .pricing-table-main
+        .pricing-table-header.is-revealing
+          .pricing-table-title.mt-12.mb-8
+            | Starter
+          .pricing-table-price.mb-32.pb-24
+            span.pricing-table-price-currency.h4 $
+            span.pricing-table-price-amount.h2 27
+            | /mo
+        ul.pricing-table-features.list-reset.text-xs.mt-24.mb-56
+          li.is-revealing
+            span.list-icon
+              svg(width='16', height='16', xmlns='http://www.w3.org/2000/svg')
+                path(fill='#5FFAD0', fill-rule='nonzero', d='M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z')
+            span
+              | Lorem ipsum is common
+              | text
+          li.is-revealing
+            span.list-icon
+              svg(width='16', height='16', xmlns='http://www.w3.org/2000/svg')
+                path(fill='#5FFAD0', fill-rule='nonzero', d='M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z')
+            span
+              | Lorem ipsum is common
+              | text
+          li.is-revealing
+            span.list-icon
+              svg(width='16', height='16', xmlns='http://www.w3.org/2000/svg')
+                path(fill='#5FFAD0', fill-rule='nonzero', d='M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z')
+            span
+              | Lorem ipsum is common
+              | text
+          li.is-revealing
+            span.list-icon
+              svg(width='16', height='16', xmlns='http://www.w3.org/2000/svg')
+                path(fill='#5FFAD0', fill-rule='nonzero', d='M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z')
+            span
+              | Lorem ipsum is common
+              | text
+      .pricing-table-cta.is-revealing
+        a.button.button-primary.button-shadow.button-block(href='#') Get early access
+
+
+
+
+
+
+
+
+
+
+section.pricing.section
+  .section-square
+  .container
+    .pricing-inner.section-inner.has-top-divider
+      h2.section-title.mt-0.text-center
+        | Pricing
+      .pricing-tables-wrap
+        +pricingTableCard()
+        +pricingTableCard()
+        +pricingTableCard()
+        +pricingTableCard()
+        +pricingTableCard()
+        +pricingTableCard()

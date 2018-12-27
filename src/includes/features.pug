@@ -1,0 +1,27 @@
+mixin featureCard(featureTitle, featureInfo)
+  .feature
+    .feature-inner
+      .feature-icon
+        svg(width='48', height='48', xmlns='http://www.w3.org/2000/svg')
+          defs
+            lineargradient#feature-1-a(x1='50%', y1='100%', x2='50%', y2='0%')
+              stop(stop-color='#5893d4', stop-opacity='0', offset='0%')
+              stop(stop-color='#5893d4', offset='100%')
+            lineargradient#feature-1-b(x1='50%', y1='0%', x2='50%', y2='100%')
+              stop(stop-color='#ff6d38', stop-opacity='0', offset='0%')
+              stop(stop-color='#ff6d38', offset='100%')
+          g(fill='none', fill-rule='evenodd')
+            path(d='M8 0h24v24a8 8 0 0 1-8 8H0V8a8 8 0 0 1 8-8z', fill='url(#feature-1-a)')
+            path(d='M48 16v24a8 8 0 0 1-8 8H16c0-17.673 14.327-32 32-32z', fill='url(#feature-1-b)')
+      h4.feature-title.h3-mobile= featureTitle
+      p.text-sm= featureInfo
+
+
+section.features.section.text-center
+  .section-square
+  .container
+    .features-inner.section-inner
+      .features-wrap
+        +featureCard('Strategy', 'We begin our process by discussing your goals. Once our designers understand your situation, we work together to develop a strategy for using motion graphics to tell your story.')
+        +featureCard('Scripting', `After a kick-off call, our motion designers and copywriters work together to develop a script and concept that will tell your story and pair well with motion design.`)
+        +featureCard('Moodboards & Storyboards', `Storyboards are shared at varying degrees of finish, making sure that important details are covered and that you know exactly what to expect before we begin the motion design process.`)

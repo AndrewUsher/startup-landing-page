@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Agnes Template
+    link(href='https://fonts.googleapis.com/css?family=Hind+Vadodara:400,700|Mukta:500,700', rel='stylesheet')
+    link(rel='stylesheet', href='./src/scss/style.scss')
+  body.is-boxed
+    #main
+    .body-wrap.boxed-container
+      include ./src/includes/header.pug
+      main
+        include ./src/includes/hero.pug
+        include ./src/includes/features.pug
+        include ./src/includes/pricing-table.pug
+        include ./src/includes/footer.pug
