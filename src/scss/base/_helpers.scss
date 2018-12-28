@@ -9,14 +9,6 @@
     padding-left: get-content-padding(desktop);
     padding-right: get-content-padding(desktop);
   }
-
-  @include media('<small') {
-    background: linear-gradient(
-      to top right,
-      color(primary, 1) 0,
-      color(primary, 2) 100%
-    );
-  }
 }
 
 .container {
