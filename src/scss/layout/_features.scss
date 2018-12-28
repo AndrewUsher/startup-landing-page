@@ -22,8 +22,7 @@
 
 .feature {
   padding: 12px;
-  min-width: 300px;
-  max-width: 30%;
+  max-width: 33%;
   flex-grow: 1;
 }
 
@@ -61,5 +60,11 @@
     .section-title {
       margin-bottom: 56px;
     }
+  }
+}
+
+@include media('<medium') {
+  .feature {
+    max-width: 100%;
   }
 }
