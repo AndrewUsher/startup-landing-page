@@ -1,4 +1,8 @@
-import React from 'react'
-import { render } from 'react-dom'
+const $$ = id => document.getElementById(id)
+const seePricingBtn = $$('see-pricing')
+const pricingContainer = $$('pricing-section')
 
-render(<h2>Hello</h2>, document.getElementById('main'))
+seePricingBtn.addEventListener('click', e => {
+  e.preventDefault()
+  pricingContainer.scrollIntoView({ behavior: 'smooth' })
+})
